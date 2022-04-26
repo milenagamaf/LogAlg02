@@ -1,2 +1,2 @@
-# LogAlg02
- Atividades de lógica e algoritmo.
+# LogAlg01
+ Primeiro projeto de lógica e algoritimo.

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade Temporal</title>
+    <style>
+        * {
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Atividade 1.2</h2>
+    <p>Crie os scripts necessários para fazer a calculadora abaixo funcionar.</p>
+    <ul>
+        <li>O usuário digita ou seleciona a data de nascimento;</li>
+        <li>O usuário clica em [Calcular idade];</li>
+        <li>A idade em anos aparece em "Idade:".</li>
+        <ul>
+            <li>A idade deve levar em consideração o mês e o dia de nascimento também!</li>
+        </ul>
+    </ul>
+    <p style="color:red">Observe que a data de nascimento (campo id="birth") retorna no formado AAAA-MM-DD.</p>
+
+    <table>
+        <tr>
+            <td>Nascimento:</td>
+            <td><input type="date" id="birth"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button id="calc">Calcular idade</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Idade:</td>
+            <td><input type="number" id="yold"></td>
+        </tr>
+    </table>
+
+    <script>
+        // Inicia o cálculo da idade ao clicar no botão.
+        calc.onclick = function () {
+
+            // Partes da data de nascimento
+            var nasc = birth.value.split('-');
+
+            
+
+            // Partes da data atual
+            var h = new Date();
+
+            var hoje = [
+                h.getFullYear(),
+                h.getMonth() + 1,
+                h.getDate()
+            ];
+
+            console.log(nasc); // Data de nascimento
+            console.log(hoje); // Data atual
+
+
+        }
+    </script>
+
+</body>
+
+</html>
